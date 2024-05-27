@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0,
+        "username": "Виктория",
+        "lastname": "Руди",
+        "age": "32",
+        "email": "viktor.rudi.wolf@gmail.com",
+        "address": "Ержанова 25"
+    },
+    {
+        "id": 1,
+        "username": "Роберт",
+        "lastname": "Руди",
+        "age": "3",
+        "email": "viktor.rudi.wolf@gmail.com",
+        "address": "Ержанова 25"
+    }
+]

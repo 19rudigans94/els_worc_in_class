@@ -1,0 +1,29 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.footer h4 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #666;
+}
+
+.footer form {
+    margin-top: 20px;
+}
+
+.footer form .form-control {
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer form .btn {
+    width: 28%;
+    display: inline-block;
+    vertical-align: middle;
+}

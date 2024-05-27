@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/users_style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/footer_style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <%- include("./components/header.ejs") %>
+    </header>
+
+    <aside>
+        <%- include("./components/sidebar.ejs") %>
+    </aside>
+
+    <main>
+        <%- title %>
+
+            <form action="/login" method="POST">
+                
+                <label for="username">Имя:</label>
+                <input type="text" name="username" id="username">
+
+                <label for="lastname">Фамилия:</label>
+                <input type="text" name="lastname" id="lastname">
+
+                <label for="age">Возраст:</label>
+                <input type="number" name="age" id="age">
+
+                <label for="address">Адрес:</label>
+                <input type="text" name="address" id="address">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"></label>
+
+                <input type="submit" value="Записать" class="add-btn">
+            </form>
+    </main>
+
+    <footer>
+        <%- include("./components/footer.ejs") %>
+    </footer>
+
+    <script src="assets/js/add_users.js"></script>
+</body>
+
+
+</html>

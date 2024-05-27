@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/users_style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/users_about.css">
+    <link rel="stylesheet" href="assets/style/footer_style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <%- include("./components/header.ejs") %>
+    </header>
+
+    <aside>
+        <%- include("./components/sidebar.ejs") %>
+    </aside>
+
+    <main>
+        <%- title %>
+
+            <%- users.map(user=> `
+                <div class="card" data-id="${user.id}">
+                    <div class="card-body user-card">
+                        <h5 class="card-title user-name">Имя: ${user.username}</h5>
+                        <p class="card-text user-lastname">Фамилия: ${user.lastname}</p>
+                        <p class="card-text user-age">Возраст: ${user.age}</p>
+                        <p class="card-text user-email">Почта: ${user.email}</p>
+                        <p class="card-text user-address">Адрес: ${user.address}</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>`).join("") %>
+
+
+    </main>
+
+
+    <footer>
+        <%- include("./components/footer.ejs") %>
+    </footer>
+
+
+</body>
+
+</html>
