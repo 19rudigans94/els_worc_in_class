@@ -1,2 +1,2 @@
-# els_worc_in_class
+# ejs_worc_in_class
 work with els
